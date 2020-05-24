@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--            时间框-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_layout"
+    android:layout_width="@dimen/dp_30"
+    android:layout_height="wrap_content"
+    android:background="@drawable/time_bg_color"
+    android:paddingStart="@dimen/dp_5"
+    android:paddingEnd="@dimen/dp_5">
+
+    <!--            日-->
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:maxLines="2"
+        android:text="@string/defalut_"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_day"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp">
+
+        <!--                月-->
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/defalut_"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_10" />
+
+        <!--                月单位-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/month"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_10" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
